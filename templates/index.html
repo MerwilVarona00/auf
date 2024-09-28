@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center; /* Center all text */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .biography-section {
+            margin-top: 30px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <h1>The Founder</h1>
+
+        <!-- Image -->
+        <img src="{{ image }}" alt="Founder Image" width="300">
+
+        <!-- Name -->
+        <h2>{{ name }}</h2>
+
+        <!-- Biography Section -->
+        <div class="biography-section">
+            <h2>Biography</h2>
+            {{ biography }}
+        </div>
+    </div>
+</body>
+</html>
